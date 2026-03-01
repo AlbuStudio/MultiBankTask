@@ -22,12 +22,12 @@ Project Structure
 
 I tried to keep things organized:
 
-    •    App/ - MultiBankTestTaskApp.swift
-    •    Models/ - Stock.swift
-    •    Services/ - WebSocketService.swift, StockService.swift
-    •    ViewModels/ - StockListViewModel.swift, StockDetailViewModel.swift
-    •    Views/ - StockListView.swift, StockRowView.swift, StockDetailView.swift, ThemeChangerView.swift, Components/ConnectionStatusView.swift
-    •    Utilities/ - PriceFormatter.swift, DoubleExtensions.swift
+    •    App - MultiBankTestTaskApp.swift
+    •    Models - Stock.swift
+    •    Services - WebSocketService.swift, StockService.swift
+    •    ViewModels - StockListViewModel.swift, StockDetailViewModel.swift
+    •    Views - StockListView.swift, StockRowView.swift, StockDetailView.swift, ThemeChangerView.swift, Components - ConnectionStatusView.swift
+    •    Utilities - PriceFormatter.swift, DoubleExtensions.swift
 
 How to Run
 
