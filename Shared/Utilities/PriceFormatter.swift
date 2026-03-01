@@ -2,7 +2,7 @@
 //  PriceFormatter.swift
 //  MultiBankTask
 //
-//  Created by Alexey Bulatnikov on 3/1/26
+//  Created by Alexey Bulatnikov on 3/1/26.
 //
 
 import Foundation
@@ -17,7 +17,7 @@ enum PriceFormatter {
         return f.string(from: NSNumber(value: value)) ?? "$\(String(format: "%.2f", value))"
     }
     
-    // Change formatter for large numbers
+    // Change formatter for large numbers.
     static func shortChange(_ value: Double) -> String {
         let sign = value >= 0 ? "+" : ""
         let absValue = abs(value)
