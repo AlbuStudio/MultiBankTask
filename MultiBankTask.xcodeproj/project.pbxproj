@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		142014172F54CEAE00F8F9DE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 142014162F54CEAE00F8F9DE /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1403BF6C2F52E7950086B9DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,25 +28,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1403BF5E2F52E7930086B9DC /* MultiBankTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiBankTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1403BF6B2F52E7950086B9DC /* MultiBankTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiBankTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1403BF752F52E7950086B9DC /* MultiBankTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiBankTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		142013EA2F54CE9700F8F9DE /* MultiBankTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiBankTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		142013EB2F54CE9700F8F9DE /* MultiBankTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiBankTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		142013EC2F54CE9700F8F9DE /* MultiBankTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiBankTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		142014162F54CEAE00F8F9DE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		142013582F54B87400F8F9DE /* Exceptions for "MultiBankTask" folder in "MultiBankTask" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1403BF5D2F52E7930086B9DC /* MultiBankTask */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1403BF602F52E7930086B9DC /* MultiBankTask */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				142013582F54B87400F8F9DE /* Exceptions for "MultiBankTask" folder in "MultiBankTask" target */,
+			);
 			path = MultiBankTask;
 			sourceTree = "<group>";
 		};
-		1403BF6E2F52E7950086B9DC /* MultiBankTaskTests */ = {
+		1420135B2F54CA0A00F8F9DE /* Core */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MultiBankTaskTests;
+			path = Core;
 			sourceTree = "<group>";
 		};
-		1403BF782F52E7950086B9DC /* MultiBankTaskUITests */ = {
+		1420135F2F54CA4A00F8F9DE /* Features */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MultiBankTaskUITests;
+			path = Features;
+			sourceTree = "<group>";
+		};
+		142013602F54CA5700F8F9DE /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		142013612F54CA6400F8F9DE /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,21 +103,16 @@
 		1403BF552F52E7930086B9DC = {
 			isa = PBXGroup;
 			children = (
+				142014162F54CEAE00F8F9DE /* README.md */,
 				1403BF602F52E7930086B9DC /* MultiBankTask */,
-				1403BF6E2F52E7950086B9DC /* MultiBankTaskTests */,
-				1403BF782F52E7950086B9DC /* MultiBankTaskUITests */,
-				1403BF5F2F52E7930086B9DC /* Products */,
+				142013612F54CA6400F8F9DE /* App */,
+				1420135B2F54CA0A00F8F9DE /* Core */,
+				1420135F2F54CA4A00F8F9DE /* Features */,
+				142013602F54CA5700F8F9DE /* Shared */,
+				142013EA2F54CE9700F8F9DE /* MultiBankTask.app */,
+				142013EB2F54CE9700F8F9DE /* MultiBankTaskTests.xctest */,
+				142013EC2F54CE9700F8F9DE /* MultiBankTaskUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		1403BF5F2F52E7930086B9DC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1403BF5E2F52E7930086B9DC /* MultiBankTask.app */,
-				1403BF6B2F52E7950086B9DC /* MultiBankTaskTests.xctest */,
-				1403BF752F52E7950086B9DC /* MultiBankTaskUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,12 +132,16 @@
 			);
 			fileSystemSynchronizedGroups = (
 				1403BF602F52E7930086B9DC /* MultiBankTask */,
+				1420135B2F54CA0A00F8F9DE /* Core */,
+				1420135F2F54CA4A00F8F9DE /* Features */,
+				142013602F54CA5700F8F9DE /* Shared */,
+				142013612F54CA6400F8F9DE /* App */,
 			);
 			name = MultiBankTask;
 			packageProductDependencies = (
 			);
 			productName = MultiBankTask;
-			productReference = 1403BF5E2F52E7930086B9DC /* MultiBankTask.app */;
+			productReference = 142013EA2F54CE9700F8F9DE /* MultiBankTask.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1403BF6A2F52E7950086B9DC /* MultiBankTaskTests */ = {
@@ -130,14 +157,11 @@
 			dependencies = (
 				1403BF6D2F52E7950086B9DC /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				1403BF6E2F52E7950086B9DC /* MultiBankTaskTests */,
-			);
 			name = MultiBankTaskTests;
 			packageProductDependencies = (
 			);
 			productName = MultiBankTaskTests;
-			productReference = 1403BF6B2F52E7950086B9DC /* MultiBankTaskTests.xctest */;
+			productReference = 142013EB2F54CE9700F8F9DE /* MultiBankTaskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		1403BF742F52E7950086B9DC /* MultiBankTaskUITests */ = {
@@ -153,14 +177,11 @@
 			dependencies = (
 				1403BF772F52E7950086B9DC /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				1403BF782F52E7950086B9DC /* MultiBankTaskUITests */,
-			);
 			name = MultiBankTaskUITests;
 			packageProductDependencies = (
 			);
 			productName = MultiBankTaskUITests;
-			productReference = 1403BF752F52E7950086B9DC /* MultiBankTaskUITests.xctest */;
+			productReference = 142013EC2F54CE9700F8F9DE /* MultiBankTaskUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -175,6 +196,7 @@
 				TargetAttributes = {
 					1403BF5D2F52E7930086B9DC = {
 						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
 					};
 					1403BF6A2F52E7950086B9DC = {
 						CreatedOnToolsVersion = 26.2;
@@ -196,7 +218,7 @@
 			mainGroup = 1403BF552F52E7930086B9DC;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 1403BF5F2F52E7930086B9DC /* Products */;
+			productRefGroup = 1403BF552F52E7930086B9DC;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -212,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142014172F54CEAE00F8F9DE /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,11 +418,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3VRN6VH2PF;
+				DEVELOPMENT_TEAM = MLH96GJZ22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultiBankTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -416,6 +441,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -427,11 +453,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3VRN6VH2PF;
+				DEVELOPMENT_TEAM = MLH96GJZ22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultiBankTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
