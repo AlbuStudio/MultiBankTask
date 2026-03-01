@@ -16,7 +16,7 @@ enum ConnectionStatus: String {
     case connecting = "connecting"
 }
 
-// WebSocket message structure for price updates
+// WebSocket message structure for price updates.
 struct PriceUpdateMessage: Codable {
     let symbol: String
     let price: Double

@@ -14,7 +14,7 @@ final class StockService: ObservableObject {
     // MARK: - Published Properties
     @Published private(set) var stocks: [Stock] = []
     
-    // MARK: - Private Properties
+    // MARK: - Private Properties.
     private var cancellables = Set<AnyCancellable>()
     private let updateQueue = DispatchQueue(label: "com.multibanktask.stockservice", qos: .userInitiated)
     
