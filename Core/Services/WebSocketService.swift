@@ -29,11 +29,11 @@ final class WebSocketService: ObservableObject {
     @Published private(set) var messagesSent: Int = 0
     @Published private(set) var messagesReceived: Int = 0
     
-    // MARK: - Public Publishers
+    // MARK: - Public Publishers.
     let receivedMessagePublisher = PassthroughSubject<PriceUpdateMessage, Never>()
     let connectionStatusPublisher = PassthroughSubject<ConnectionStatus, Never>()
     
-    // MARK: - Private Properties
+    // MARK: - Private Properties.
     private var webSocketTask: URLSessionWebSocketTask?
     private let url: URL
     private var pingTimer: Timer?
@@ -41,7 +41,7 @@ final class WebSocketService: ObservableObject {
     private let maxReconnectAttempts = 3
     private var isActive = false
     
-    // MARK: - Initialization
+    // MARK: - Initialization.
     init(url: URL = URL(string: "wss://ws.postman-echo.com/raw")!) {
         self.url = url
     }
