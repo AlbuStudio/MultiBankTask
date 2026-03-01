@@ -31,7 +31,7 @@ enum PriceFormatter {
         }
     }
     
-    // Percentage formatter
+    // Percentage formatter.
     static func shortPercent(_ value: Double) -> String {
         let sign = value >= 0 ? "+" : ""
         let absValue = abs(value)
